@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LeaveFeedBack from "./LeaveFeedBack";
 
 class FeedBack extends Component {
   state = {
@@ -44,6 +45,7 @@ class FeedBack extends Component {
             </label>
           </form>
         </div>
+        <LeaveFeedBack step={this.state} />
       </div>
     );
   }
